@@ -23,7 +23,7 @@ namespace IDB_RandomNumbers
                 WriteToExcel();
                 Console.ReadLine();
             }
- 
+  
         }
 
         public static List<string> ListOfNumbers()

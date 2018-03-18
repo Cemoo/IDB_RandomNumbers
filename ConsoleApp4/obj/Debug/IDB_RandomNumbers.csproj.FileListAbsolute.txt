@@ -5,3 +5,10 @@ c:\users\cemal\documents\visual studio 2017\Projects\ConsoleApp4\ConsoleApp4\obj
 c:\users\cemal\documents\visual studio 2017\Projects\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.exe
 c:\users\cemal\documents\visual studio 2017\Projects\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.pdb
 c:\users\cemal\documents\visual studio 2017\Projects\ConsoleApp4\ConsoleApp4\obj\Debug\IDB_RandomNumbers.csproj.ResolveComReference.cache
+C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\ConsoleApp4\obj\Debug\IDB_RandomNumbers.csproj.ResolveComReference.cache
+C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\ConsoleApp4\bin\Debug\ConsoleApp4.exe.config
+C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\ConsoleApp4\bin\Debug\ConsoleApp4.exe
+C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\ConsoleApp4\bin\Debug\ConsoleApp4.pdb
+C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\ConsoleApp4\obj\Debug\ConsoleApp4.exe
+C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\ConsoleApp4\obj\Debug\ConsoleApp4.pdb
+C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\ConsoleApp4\obj\Debug\IDB_RandomNumbers.csprojResolveAssemblyReference.cache

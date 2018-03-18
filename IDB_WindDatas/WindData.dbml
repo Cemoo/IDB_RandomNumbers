@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="IDB_WindDatas" Class="WindDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CEMAL;Initial Catalog=IDB_WindDatas;Integrated Security=True" SettingsObjectName="IDB_WindDatas.Properties.Settings" SettingsPropertyName="IDB_WindDatasConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Wind" Member="Winds">
+    <Type Name="Wind">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Speed" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Direction" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

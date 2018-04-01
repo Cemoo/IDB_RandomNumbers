@@ -83,6 +83,8 @@ namespace IDB_WindDatas
 
         }
 
+     
+
         public void ReadFromText(string path)
         {
             throw new NotImplementedException();

@@ -28,3 +28,5 @@ C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\IDB_WindDatas\bin\Debu
 C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\IDB_WindDatas\bin\Debug\System.Xml.ReaderWriter.dll
 C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\IDB_WindDatas\bin\Debug\FastExcel.xml
 C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\IDB_WindDatas\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\IDB_WindDatas\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\IDB_WindDatas\bin\Debug\Newtonsoft.Json.xml

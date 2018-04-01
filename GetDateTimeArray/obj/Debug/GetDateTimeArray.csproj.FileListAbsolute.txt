@@ -1,0 +1,6 @@
+C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\GetDateTimeArray\bin\Debug\GetDateTimeArray.exe.config
+C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\GetDateTimeArray\bin\Debug\GetDateTimeArray.exe
+C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\GetDateTimeArray\bin\Debug\GetDateTimeArray.pdb
+C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\GetDateTimeArray\obj\Debug\GetDateTimeArray.csprojResolveAssemblyReference.cache
+C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\GetDateTimeArray\obj\Debug\GetDateTimeArray.exe
+C:\Users\Cemal\Desktop\PROJECTS\Yüksek\IDB_RandomNumbers\GetDateTimeArray\obj\Debug\GetDateTimeArray.pdb

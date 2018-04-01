@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDB_RandomNumbers", "Consol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDB_WindDatas", "IDB_WindDatas\IDB_WindDatas.csproj", "{B2C1E7EE-3CD6-4F6D-89B4-5A6B8BCCDC5F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetDateTimeArray", "GetDateTimeArray\GetDateTimeArray.csproj", "{448D3198-8E86-42FD-9CDD-68034BC40E9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B2C1E7EE-3CD6-4F6D-89B4-5A6B8BCCDC5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2C1E7EE-3CD6-4F6D-89B4-5A6B8BCCDC5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2C1E7EE-3CD6-4F6D-89B4-5A6B8BCCDC5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{448D3198-8E86-42FD-9CDD-68034BC40E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{448D3198-8E86-42FD-9CDD-68034BC40E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{448D3198-8E86-42FD-9CDD-68034BC40E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{448D3198-8E86-42FD-9CDD-68034BC40E9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

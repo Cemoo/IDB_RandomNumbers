@@ -33,7 +33,6 @@
             this.windSpeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direction = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnRead = new System.Windows.Forms.Button();
-            this.btnReadFromExcel = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
@@ -90,15 +89,6 @@
             this.btnRead.UseVisualStyleBackColor = true;
             this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
             // 
-            // btnReadFromExcel
-            // 
-            this.btnReadFromExcel.Location = new System.Drawing.Point(683, 172);
-            this.btnReadFromExcel.Name = "btnReadFromExcel";
-            this.btnReadFromExcel.Size = new System.Drawing.Size(202, 74);
-            this.btnReadFromExcel.TabIndex = 2;
-            this.btnReadFromExcel.Text = "READ FROM EXCEL";
-            this.btnReadFromExcel.UseVisualStyleBackColor = true;
-            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -144,7 +134,6 @@
             this.ClientSize = new System.Drawing.Size(888, 495);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.btnReadFromExcel);
             this.Controls.Add(this.btnRead);
             this.Controls.Add(this.grdData);
             this.Name = "Main";
@@ -162,7 +151,6 @@
 
         private System.Windows.Forms.DataGridView grdData;
         private System.Windows.Forms.Button btnRead;
-        private System.Windows.Forms.Button btnReadFromExcel;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;

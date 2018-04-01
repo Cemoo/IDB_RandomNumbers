@@ -8,12 +8,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using IDB_WindDatas.Interface;
 using System.IO;
+using System.Threading;
 
 namespace IDB_WindDatas
 {
     public partial class Main : Form
     {
         WindDataDataContext db = new WindDataDataContext();
+
         public Main()
         {
             InitializeComponent();
@@ -22,27 +24,65 @@ namespace IDB_WindDatas
         Process pro;
         private string _path = "";
         List<WindData> list = new List<WindData>();
+        List<WindData> realList = new List<WindData>();
+        List<WindData> mainList = new List<WindData>();
+
+        List<Thread> thList = new List<Thread>();
 
         private void btnRead_Click(object sender, EventArgs e)
+        {
+            Fetch();
+        }
+
+        public void Fetch()
         {
             if (_path != "")
             {
                 pro = new Process(CreateRead());
                 list = pro.Read(_path);
 
-                foreach (var item in list)
+                //foreach (var item in list)
+                //{
+                //    Console.WriteLine(FixDate(item));
+                //    var str = FixDate(item);
+                //    InsertDB(item);
+                //    lblStatus.Text = "Data added to DB";  
+                //}
+
+                if (mainList.Count != 0)
                 {
-                    Console.WriteLine(FixDate(item));
-                    InsertDB(item);
-                    lblStatus.Text = "Data added to DB";
+                    foreach (var item in mainList)
+                    {
+                        foreach (var listItem in list)
+                        {
+                            var str = FixDate(listItem);
+                            if (item.day == str)
+                            {
+                                item.direction = listItem.direction;
+                                item.windSpeed = listItem.windSpeed;
+                            }
+
+                        }
+
+                    }
+
+                    foreach (var item in mainList)
+                    {
+                        InsertDB(item);
+                    }
                 }
+
+                
             }
-          
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
-            
+            Thread thMain = new Thread(FillMainList);
+            //FillMainList();
+            thMain.IsBackground = true;
+            thMain.Start();
+            thList.Add(thMain);
         }
 
         private IRead CreateRead()
@@ -85,11 +125,11 @@ namespace IDB_WindDatas
             if (list.Count != 0)
             {
                 Wind w = new Wind();
-                w.Date = FixDate(item);
+                w.Date = item.day;
                 w.Speed = item.windSpeed;
                 w.Direction = item.direction;
                 db.Winds.InsertOnSubmit(w);
-                db.SubmitChanges();
+                //db.SubmitChanges();
             }
         }
 
@@ -130,5 +170,38 @@ namespace IDB_WindDatas
 
             return day + "-" + month + "-" + year + " " + time;
         }
+
+        public void FillMainList()
+        {
+            DateTime startDate = new DateTime(2011, 01, 01);
+            DateTime finishDate = new DateTime(2013, 01, 01);
+
+            var finish = false;
+           // mainList.Add(startDate.ToString("dd-MM-yy HH:mm"));
+            mainList.Add(new WindData
+            {
+                day = startDate.ToString("dd-MM-yy HH:mm")
+            });
+            while (!finish)
+            {
+                if (startDate.AddHours(1) != finishDate)
+                {
+                    startDate = startDate.AddHours(1);
+                    mainList.Add(new WindData
+                    {
+                        day = startDate.ToString("dd-MM-yy HH:mm")
+                    });
+                }
+                else
+                {
+                    //list.Add(startDate.AddHours(1).ToString("yyyy-MM-dd HH:mm:ss"));
+                    finish = true;
+                }
+                Console.WriteLine(startDate.ToString("yyyy-MM-dd HH:mm"));
+            }
+        }
+
+
+
     }
 }
